@@ -89,13 +89,11 @@ module.exports = [
         owner: 'realsimonooo', // GitHub仓库所有者
         admin: ['realsimonooo'], // 对仓库有写权限的人
         // distractionFreeMode: true,
-        pagerDirection: 'last', // 'first'正序 | 'last'倒序
-        id: '<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>', //  页面的唯一标识,长度不能超过50
-        title: '[🌏COMMENT]<%- frontmatter.title %>', // GitHub issue 的标题
-        labels: ['Gitalk', 'Comment'], // GitHub issue 的标签
-        body:
-          '页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>', // GitHub issue 的内容
-      },
+        id: "<%- (window.location.origin + (frontmatter.to.path || window.location.pathname)).slice(-50) %>", //  页面的唯一标识,长度不能超过50
+        title: "[COMMENT]<%- document.title %>", // GitHub issue 的标题
+        labels: ["Gitalk", "Comment"], // GitHub issue 的标签
+        body:"<%- document.title %>：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>" // GitHub issue 的内容
+ },
     },
   ],
   [

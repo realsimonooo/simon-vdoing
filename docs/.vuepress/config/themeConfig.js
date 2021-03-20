@@ -16,7 +16,7 @@ module.exports = {
 
   //*** 以下配置是Vdoing主题改动和新增的配置 ***//
 
-  category: false, // 是否打开分类功能，默认true。 如打开，会做的事情有：1. 自动生成的frontmatter包含分类字段 2.页面中显示与分类相关的信息和模块 3.自动生成分类页面（在@pages文件夹）。如关闭，则反之。
+  category: true, // 是否打开分类功能，默认true。 如打开，会做的事情有：1. 自动生成的frontmatter包含分类字段 2.页面中显示与分类相关的信息和模块 3.自动生成分类页面（在@pages文件夹）。如关闭，则反之。
   tag: false, // 是否打开标签功能，默认true。 如打开，会做的事情有：1. 自动生成的frontmatter包含标签字段 2.页面中显示与标签相关的信息和模块 3.自动生成标签页面（在@pages文件夹）。如关闭，则反之。
   archive: false, // 是否打开归档功能，默认true。 如打开，会做的事情有：1.自动生成归档页面（在@pages文件夹）。如关闭，则反之。
   // categoryText: '随笔', // 碎片化文章（_posts文件夹的文章）预设生成的分类值，默认'随笔'
@@ -57,7 +57,7 @@ module.exports = {
     slogan: '还要努努力',
   },
   social: {
-    iconfontCssFile: '//at.alicdn.com/t/font_2418224_3lxpzzt8b3a.eot', // 可选，阿里图标库在线css文件地址，对于主题没有的图标可自由添加
+    // iconfontCssFile: '//at.alicdn.com/t/font_2418224_3lxpzzt8b3a.eot', // 可选，阿里图标库在线css文件地址，对于主题没有的图标可自由添加
     icons: [
       {
         iconClass: 'icon-youjian',
@@ -78,7 +78,7 @@ module.exports = {
   },
   footer: {
     // 页脚信息
-    createYear: 2020, // 博客创建年份
+    createYear: 2021, // 博客创建年份
     copyrightInfo:
       '🌏 Simon Law with 💙', // 博客版权信息，支持a标签
   },
