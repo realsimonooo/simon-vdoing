@@ -89,7 +89,7 @@ module.exports = [
         repo: 'simon-gitalk-comment', // GitHub 仓库
         owner: 'realsimonooo', // GitHub仓库所有者
         admin: ['realsimonooo'], // 对仓库有写权限的人
-        // distractionFreeMode: true,
+        distractionFreeMode: true,
         id: "<%- (window.location.origin + (frontmatter.to.path || window.location.pathname)).slice(-50) %>", //  页面的唯一标识,长度不能超过50
         title: "[COMMENT]<%- document.title %>", // GitHub issue 的标题
         labels: ["Gitalk", "Comment"], // GitHub issue 的标签

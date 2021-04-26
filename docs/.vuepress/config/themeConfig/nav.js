@@ -9,9 +9,16 @@ module.exports = [
         text: '🧐我正在学:',
         items:[
           {text:'<JavaWeb>笔记', link:'/note/javaweb/'},
-          {text:'<操作系统>笔记', link:'/note/osnote/'}
+          {text:'<操作系统>笔记', link:'/note/osnote/'},
+          {text:'<数据库原理与应用>笔记', link:'/note/sqlnote/'}
         ]
       },
     ]
-    }
+  }, {
+    text: '🔨技术',
+    link: '/technology/',
+    items:[
+
+    ]
+  }
 ]

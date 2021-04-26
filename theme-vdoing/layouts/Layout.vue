@@ -30,7 +30,7 @@
         #bottom
         v-if="sidebarSlotBottom"
       >
-        <div class="sidebar-slot sidebar-slot-bottom" v-html="sidebarSlotBottom"></div>
+        <div class="sidebar-slot sidebar-slot-bottom" v-html="sidebarSlotBottom">test</div>
       </template>
       <!-- <slot name="sidebar-top" #top />
       <slot name="sidebar-bottom" #bottom /> -->
